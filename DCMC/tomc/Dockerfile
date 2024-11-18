@@ -6,6 +6,6 @@ RUN apt-get update
 
 RUN mkdir tom 
 
-RUN WORKDIR /tom 
+WORKDIR /tom 
 
 

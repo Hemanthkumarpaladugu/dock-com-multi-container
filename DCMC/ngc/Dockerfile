@@ -6,6 +6,6 @@ RUN apt-get update
 
 RUN mkdir ng 
 
-RUN WORKDIR /ng 
+WORKDIR /ng 
 
 

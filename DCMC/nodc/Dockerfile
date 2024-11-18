@@ -6,6 +6,6 @@ RUN apt-get update
 
 RUN mkdir nod 
 
-RUN WORKDIR /nod 
+WORKDIR /nod 
 
 
