@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  ubuntu:
+    build:
+      context: ./ubuntu
+    container_name: ubuntu_container
+
+  nginx:
+    build:
+      context: ./nginx
+    container_name: nginx_container
+    ports:
+      - "80:80"
+
+  tomcat:
+    build:
+      context: ./tomcat
+    container_name: tomcat_container
+    ports:
+      - "8080:8080"
+
+  node:
+    build:
+      context: ./node
+    container_name: node_container
+    ports:
+      - "5000:5000"
